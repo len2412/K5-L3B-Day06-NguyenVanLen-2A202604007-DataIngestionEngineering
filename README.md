@@ -8,6 +8,33 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 |---|---|---|
 | Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
+## Completed project: Nguyen Van Len
+
+Corpus and benchmark are in `data/`; the project code is in `starter/src/`. The current measured run is `artifacts/run_20261114T054151456688Z/`. See the individual report under `report/individual/` for results and limitations.
+
+### Reproduce the run
+
+Requires Docker Compose, Python 3.11–3.14, the dependencies below, and the `BAAI/bge-large-en-v1.5` model already in the local Hugging Face cache (the embedding loader runs offline).
+
+From the project root in PowerShell:
+
+```powershell
+Set-Location starter
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py
+python -m src.run
+```
+
+Each run writes a new timestamped directory under `artifacts/`. PostgreSQL is bound to localhost port 55433; the compose password is a local lab credential only. Keep `.env` out of version control. Exact package constraints are in `starter/requirements.txt`; the database image is pinned in `starter/docker-compose.yml`.
+
+### Submission status
+
+Student class is L3B. The student ID and name are taken from the project folder; confirm the name spelling/diacritics. Submission is local only for now, as requested. If publishing later, add the repository URL and final commit to `STUDENT.md`.
+
 ## Bắt đầu nhanh
 
 Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
@@ -29,7 +56,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 ## 3. Chuẩn bị bài nộp
 
 1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Điền [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và bản sao [mẫu báo cáo cá nhân](report/individual/MSSV_HoTen.md).
+2. Xem [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và [báo cáo cá nhân](report/individual/2A202604007_NguyenVanLen.md); xác nhận các nhãn AI-assisted trước khi nộp.
 3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
 
 ## Tài liệu hướng dẫn

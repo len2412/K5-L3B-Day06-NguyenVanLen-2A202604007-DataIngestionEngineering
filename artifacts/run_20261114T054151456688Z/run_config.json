@@ -1,0 +1,56 @@
+{
+  "created_at_utc": "2026-11-14T05:44:41.183788+00:00",
+  "source_id": "progit-v2-1-450",
+  "pdf": "data\\progit.pdf",
+  "manifest": "data\\manifest.json",
+  "benchmark": "data\\benchmark.json",
+  "pages_ingested": 95,
+  "model_name": "BAAI/bge-large-en-v1.5",
+  "embedding_dimensions": 1024,
+  "device": "cpu",
+  "similarity": "cosine (pgvector exact ORDER BY cosine distance)",
+  "cost_usd": 0,
+  "strategies": {
+    "A": "500-character fixed windows, 50-character overlap, no metadata filter",
+    "B": "Paragraph grouping up to 1200 characters, no metadata filter",
+    "C": "Same chunks and vectors as B; apply only benchmark-provided metadata filters"
+  },
+  "strategy_stats": {
+    "A": {
+      "chunk_count": 375,
+      "embedding_seconds": 84.3650693999989,
+      "database_upsert_seconds": 0.3485000000000582,
+      "chunk_chars_total": 166035,
+      "chunk_chars_min": 58,
+      "chunk_chars_max": 500,
+      "chunk_chars_mean": 442.76
+    },
+    "B": {
+      "chunk_count": 177,
+      "embedding_seconds": 77.38224259999879,
+      "database_upsert_seconds": 0.18616149999979825,
+      "chunk_chars_total": 152003,
+      "chunk_chars_min": 21,
+      "chunk_chars_max": 1199,
+      "chunk_chars_mean": 858.7740112994351
+    },
+    "C": {
+      "chunk_count": 177,
+      "embedding_seconds": 0.0,
+      "vectors_reused_from": "B",
+      "database_upsert_seconds": 0.18729130000065197,
+      "chunk_chars_total": 152003,
+      "chunk_chars_min": 21,
+      "chunk_chars_max": 1199,
+      "chunk_chars_mean": 858.7740112994351
+    }
+  },
+  "outputs": [
+    "pdf_extraction.txt",
+    "chunking_result.txt",
+    "retrieval_traces.jsonl",
+    "retrieval_summary.json",
+    "manual_test_review.jsonl",
+    "coherence_review.csv"
+  ]
+}

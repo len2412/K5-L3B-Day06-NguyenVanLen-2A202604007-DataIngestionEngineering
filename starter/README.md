@@ -1,6 +1,6 @@
 # Starter · PostgreSQL + pgvector
 
-Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
+Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local. Pipeline mặc định dùng model BAAI đã có trong Hugging Face cache; vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
 
 ## Cấu trúc
 
@@ -8,19 +8,19 @@ Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo Post
 starter/
 ├── docker-compose.yml     # PostgreSQL 16 + pgvector, chỉ mở cổng local
 ├── init.sql               # bật extension khi tạo database mới
-├── requirements.txt       # psycopg, pypdf và python-dotenv
+├── requirements.txt       # psycopg, pypdf, python-dotenv, sentence-transformers
 ├── .env.example           # cấu hình mẫu; copy thành .env
 ├── scripts/check_setup.py # kiểm tra kết nối và extension (đã chạy được)
 ├── src/
 │   ├── models.py          # cấu trúc dữ liệu mẫu
-│   ├── ingestion.py       # TODO: đọc / chuẩn hóa tài liệu
-│   ├── chunking.py        # TODO: chia chunk
-│   ├── embeddings.py      # TODO: chọn model API hoặc local
-│   ├── store.py           # TODO: lưu vector, metadata và filter
-│   ├── evaluation.py      # TODO: chấm truy xuất, lưu trace
-│   └── run.py             # TODO: kết nối các bước thành pipeline
-├── data/                  # bạn tự chuẩn bị corpus được phép sử dụng
-└── results/               # lưu kết quả của bạn
+│   ├── ingestion.py       # đọc trang trong manifest, chuẩn hóa và giữ metadata
+│   ├── chunking.py        # fixed windows và paragraph-aware chunks
+│   ├── embeddings.py      # local BAAI BGE embeddings
+│   ├── store.py           # lưu vector, metadata và filter trong pgvector
+│   ├── evaluation.py      # Hit@1, Evidence Hit@3 và tổng hợp theo split
+│   └── run.py             # chạy ingestion, A/B/C, trace và mẫu chấm tay
+├── ../data/               # corpus, manifest và benchmark của project
+└── ../artifacts/          # kết quả từng lần chạy
 ```
 
 ## 1. Cài và kiểm tra database
@@ -52,14 +52,14 @@ docker compose -p day6_student_starter stop
 
 ## 2. Chọn embedding model
 
-Điền key tương ứng trong `.env` nếu dùng OpenRouter, OpenAI hoặc Gemini; **không commit `.env`**. Model local không cần API key. `requirements.txt` chỉ có dependencies cơ bản: tự cài SDK hoặc thư viện local phù hợp với model bạn chọn và ghi lại version/lệnh cài trong báo cáo. Ghi tên model và số chiều; dùng cùng model cho toàn bộ chiến lược và vector query tương thích vector document.
+Starter hiện implement embedding local qua Sentence Transformers. `.env.example` chọn `BAAI/bge-large-en-v1.5`; model phải có trong Hugging Face cache vì pipeline chạy offline. Có thể đặt `EMBEDDING_MODEL=BAAI/bge-m3` nếu model đó đã được tải. API embedding chưa được implement trong starter. Ghi tên model và số chiều; dùng cùng model cho toàn bộ chiến lược. Query vectors và document vectors phải cùng model.
 
 ## 3. Hoàn thiện pipeline
 
-1. Đặt corpus vào `data/` hoặc cung cấp manifest/hướng dẫn truy cập. Đọc [GUIDE.md](../GUIDE.md) về **30 trang nội dung**, quyền dữ liệu và metadata.
-2. Hoàn thiện từng hàm TODO trong `src/`. Lưu ID tài liệu, nguồn, trang/vị trí và ít nhất một trường filter có ích.
+1. Đặt PDF, manifest và benchmark trong thư mục `data/` ở project root. Đọc [GUIDE.md](../GUIDE.md) về **30 trang nội dung**, quyền dữ liệu và metadata.
+2. Loader lấy các trang useful từ manifest, còn metadata chương được dùng cho filter. Câu benchmark cần có evidence chính xác ở trang gold; pipeline dừng và báo câu lỗi nếu không tìm thấy.
 3. Xây ít nhất ba cấu hình; ví dụ A fixed-size, B theo đoạn, C như B nhưng có filter. Cần cùng corpus, model và benchmark; nạp lại không nhân đôi và xử lý chunk cũ khi dữ liệu đổi.
 4. Tự viết ít nhất 20 câu hỏi kèm evidence, tách dev/test trước khi thử theo [BENCHMARK.md](../BENCHMARK.md). Lưu trace top-3 và báo cáo đủ năm tiêu chí.
-5. Sau khi hoàn thiện, chạy `python -m src.run` từ thư mục `starter/`. Trước khi làm TODO, lệnh này **chủ động báo `NotImplementedError`**.
+5. Chạy `python -m src.run` từ thư mục `starter/`. Mỗi lần chạy tạo thư mục mới dưới project `artifacts/`, lưu `pdf_extraction.txt` ngay sau khi đọc PDF và `chunking_result.txt` ngay sau khi chia chunk; sau đó lưu traces, summary và file review. Hai file text vẫn còn nếu benchmark validation hoặc bước database tiếp theo thất bại.
 
 Lưu code, cấu hình, kết quả và lệnh chạy để người chấm tái lập; không commit key, dữ liệu mật hoặc dữ liệu không có quyền chia sẻ.

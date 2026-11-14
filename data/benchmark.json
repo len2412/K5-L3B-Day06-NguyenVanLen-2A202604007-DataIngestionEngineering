@@ -1,0 +1,173 @@
+﻿{
+  "benchmark_id": "progit-v2-1-450-chapters-1-3-benchmark-v1",
+  "source_id": "progit-v2-1-450",
+  "source_file": "data/progit.pdf",
+  "source_version": "2.1.450",
+  "review_status": "Gold pages and evidence quotes passed the pipeline's normalized PDF page-validation check in runs 2026-11-14T05:24:34Z and 2026-11-14T05:44:41Z. Submitter should still review answer sufficiency and equivalent evidence.",
+  "split_policy": "Fixed before experiments: q01-q15 dev; q16-q20 test. Do not tune on test results.",
+  "filter_policy": "A filter is supplied only when the question explicitly names a chapter. Filter field: chapter_number (integer), copied from manifest metadata.",
+  "questions": [
+    {
+      "id": "q01", "split": "dev", "type": "direct",
+      "question": "What is version control designed to let you do with files over time?",
+      "expected_answer": "It records changes to files so specific earlier versions can be recalled.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 10,
+      "evidence_quote": "a system that records changes to a file or set of files over time so that you can recall specific versions later",
+      "filter": null
+    },
+    {
+      "id": "q02", "split": "dev", "type": "paraphrase",
+      "question": "What is the main availability risk of keeping version history on one central server?",
+      "expected_answer": "The central server is a single point of failure; when it is down, collaboration and saving versioned changes stop, and without backups its disk failure can destroy the project history.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 12,
+      "evidence_quote": "the single point of failure that the centralized server represents",
+      "filter": null
+    },
+    {
+      "id": "q03", "split": "dev", "type": "direct",
+      "question": "In a distributed version control system, what does each client receive beyond the latest file snapshot?",
+      "expected_answer": "A full mirror of the repository, including its history; each clone can serve as a full backup.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 12,
+      "evidence_quote": "they fully mirror the repository, including its full history",
+      "filter": null
+    },
+    {
+      "id": "q04", "split": "dev", "type": "paraphrase",
+      "question": "How does Git represent project history: as a sequence of file differences or as saved project states?",
+      "expected_answer": "Git stores snapshots of the project rather than a series of changesets or differences.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 63,
+      "evidence_quote": "Git doesn’t store data as a series of changesets or differences, but instead as a series of snapshots",
+      "filter": null
+    },
+    {
+      "id": "q05", "split": "dev", "type": "direct",
+      "question": "What three file states does Git use to describe files in the working directory?",
+      "expected_answer": "Modified, staged, and committed (in the Git directory).",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 17,
+      "evidence_quote": "the working tree, the staging area, and the Git directory",
+      "filter": null
+    },
+    {
+      "id": "q06", "split": "dev", "type": "condition",
+      "question": "In Chapter 1, which git config option applies settings to all repositories for the current user, and which option applies them system-wide?",
+      "expected_answer": "--global applies user-specific settings across that user's repositories; --system applies settings for every user and repository on the system.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 21,
+      "evidence_quote": "the --global option, and this affects all of the repositories you work with on your system",
+      "filter": {"chapter_number": 1}
+    },
+    {
+      "id": "q07", "split": "dev", "type": "direct",
+      "question": "Which command-line command shows the manual page for a Git command such as git config?",
+      "expected_answer": "git help config (or git config --help).",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 24,
+      "evidence_quote": "git <verb> --help",
+      "filter": null
+    },
+    {
+      "id": "q08", "split": "dev", "type": "direct",
+      "question": "What are the two common ways to turn an existing project into a Git repository?",
+      "expected_answer": "Initialize a repository in the project directory with git init, or clone an existing Git repository with git clone.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 26,
+      "evidence_quote": "You typically obtain a Git repository in one of two ways",
+      "filter": null
+    },
+    {
+      "id": "q09", "split": "dev", "type": "paraphrase",
+      "question": "A file is in the working folder but was neither in the last commit nor added to the staging area. How does Git classify it, and will it be included in the next commit automatically?",
+      "expected_answer": "It is untracked and will not be included in a commit until explicitly staged with git add.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 28,
+      "evidence_quote": "any files in your working directory that were not in your last snapshot and are not in your staging area",
+      "filter": null
+    },
+    {
+      "id": "q10", "split": "dev", "type": "condition",
+      "question": "In Chapter 2, does git add only start tracking new files, or can it also stage changes to files Git already tracks?",
+      "expected_answer": "It does both: it can begin tracking new files and stage modifications or other content for the next commit.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 30,
+      "evidence_quote": "you use it to begin tracking new files, to stage files",
+      "filter": {"chapter_number": 2}
+    },
+    {
+      "id": "q11", "split": "dev", "type": "direct",
+      "question": "What does git diff show by default when there are staged and unstaged edits?",
+      "expected_answer": "It shows changes that have not yet been staged, not the changes already staged for the next commit.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 34,
+      "evidence_quote": "changed but not yet staged",
+      "filter": null
+    },
+    {
+      "id": "q12", "split": "dev", "type": "direct",
+      "question": "What does git commit -a do for tracked files?",
+      "expected_answer": "It stages changes to tracked files and commits them in one step; it does not add untracked files.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 37,
+      "evidence_quote": "automatically stage every file that is already tracked before doing the commit",
+      "filter": null
+    },
+    {
+      "id": "q13", "split": "dev", "type": "condition",
+      "question": "In Chapter 2, what should you use to remove a file from Git and the working directory, and what if you only want it removed from tracking?",
+      "expected_answer": "Use git rm to remove it from Git and the working tree; use git rm --cached to remove it from the index while keeping the working-tree file.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 38,
+      "evidence_quote": " git rm command does that, and also removes the file from your working directory",
+      "filter": {"chapter_number": 2}
+    },
+    {
+      "id": "q14", "split": "dev", "type": "paraphrase",
+      "question": "How does git log order commits when run with no options?",
+      "expected_answer": "In reverse chronological order, with the most recent commit first.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 40,
+      "evidence_quote": "lists the commits made in that repository in reverse chronological order",
+      "filter": null
+    },
+    {
+      "id": "q15", "split": "dev", "type": "direct",
+      "question": "Which option to git log displays the patch introduced by each commit?",
+      "expected_answer": "-p or --patch.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 41,
+      "evidence_quote": "-p or --patch, which shows the difference (the patch output) introduced in each commit",
+      "filter": null
+    },
+    {
+      "id": "q16", "split": "test", "type": "direct",
+      "question": "In Chapter 3, what does a Git branch point to?",
+      "expected_answer": "A branch is a lightweight movable pointer to a commit.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 64,
+      "evidence_quote": "a lightweight movable pointer to one of these commits",
+      "filter": {"chapter_number": 3}
+    },
+    {
+      "id": "q17", "split": "test", "type": "condition",
+      "question": "In Chapter 3, what does HEAD identify when you have a branch checked out, and what does it identify in detached-HEAD state?",
+      "expected_answer": "Normally HEAD points to the current branch; in detached-HEAD state it points directly to a commit.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 65,
+      "evidence_quote": "It keeps a special pointer called HEAD",
+      "filter": {"chapter_number": 3}
+    },
+    {
+      "id": "q18", "split": "test", "type": "direct",
+      "question": "What command creates a new branch and switches to it in one step?",
+      "expected_answer": "git checkout -b <branch-name>.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 71,
+      "evidence_quote": "git checkout command with the -b switch",
+      "filter": null
+    },
+    {
+      "id": "q19", "split": "test", "type": "condition",
+      "question": "When can Git refuse to switch branches because of uncommitted work?",
+      "expected_answer": "When changes in the working directory or staging area conflict with the branch being checked out.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 72,
+      "evidence_quote": "if your working directory or staging area has uncommitted changes that conflict with the branch you’re checking out, Git won’t let you switch branches",
+      "filter": null
+    },
+    {
+      "id": "q20", "split": "test", "type": "direct",
+      "question": "In Chapter 3, in a fast-forward merge, what happens to the branch pointer being merged into?",
+      "expected_answer": "It moves forward to point to the same commit as the merged branch; no new merge commit is needed.",
+      "gold_source_id": "progit-v2-1-450", "gold_page": 73,
+      "evidence_quote": "Git simply moves the pointer forward",
+      "filter": {"chapter_number": 3}
+    }
+  ]
+}
+
+

@@ -1,0 +1,1070 @@
+{
+  "corpus_id": "progit-v2-1-450-chapters-1-3",
+  "source_id": "progit-v2-1-450",
+  "title": "Pro Git",
+  "authors": [
+    "Scott Chacon",
+    "Ben Straub"
+  ],
+  "edition": "Second edition (PDF identifies itself as Version 2.1.450)",
+  "version": "2.1.450",
+  "version_date": "2026-05-25",
+  "language": "English",
+  "file": {
+    "source_path": "data/progit.pdf",
+    "uploaded_filename": "progit.pdf",
+    "format": "PDF",
+    "physical_pdf_page_count": 501,
+    "sha256": "403f4051cdca2c585361d85f6e87d5dd87d8c544fc91dced007711babe81e8ef"
+  },
+  "source_urls": [
+    "https://git-scm.com/book/en/v2",
+    "https://github.com/progit/progit2"
+  ],
+  "license": {
+    "name": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported",
+    "identifier": "CC BY-NC-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "commercial_use_allowed": false,
+    "redistribution_allowed_under_conditions": true,
+    "conditions": [
+      "Provide appropriate attribution",
+      "Distribute adaptations under the same license",
+      "Do not use the material for commercial purposes"
+    ],
+    "third_party_material_reviewed_separately": false
+  },
+  "accessed_at": "2026-11-14",
+  "selection_method": "Counted pages belonging to the first three instructional chapters, using the printed page numbers shown in the PDF and mapping them to physical PDF pages. Cover, table of contents, license, prefaces, contributors, introduction, and later chapters were excluded.",
+  "physical_page_mapping": {
+    "method": "Verified page labels in extracted PDF text. For the selected range, physical PDF page = printed page + 6.",
+    "mapping_status": "verified_against_uploaded_pdf"
+  },
+  "selected_chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page_range": [
+        10,
+        25
+      ],
+      "physical_pdf_page_range": [
+        16,
+        31
+      ],
+      "useful_page_count": 16,
+      "normalized_characters_total": 27484
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page_range": [
+        26,
+        62
+      ],
+      "physical_pdf_page_range": [
+        32,
+        68
+      ],
+      "useful_page_count": 37,
+      "normalized_characters_total": 69023
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page_range": [
+        63,
+        104
+      ],
+      "physical_pdf_page_range": [
+        69,
+        110
+      ],
+      "useful_page_count": 42,
+      "normalized_characters_total": 55558
+    }
+  ],
+  "total_useful_printed_pages": 95,
+  "total_normalized_characters": 152065,
+  "pages": [
+    {
+      "page_id": "progit-v21450-p010",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 10,
+      "physical_pdf_page": 16,
+      "normalized_characters": 1911,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p011",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 11,
+      "physical_pdf_page": 17,
+      "normalized_characters": 834,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p012",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 12,
+      "physical_pdf_page": 18,
+      "normalized_characters": 1536,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p013",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 13,
+      "physical_pdf_page": 19,
+      "normalized_characters": 397,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p014",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 14,
+      "physical_pdf_page": 20,
+      "normalized_characters": 2433,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p015",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 15,
+      "physical_pdf_page": 21,
+      "normalized_characters": 1589,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p016",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 16,
+      "physical_pdf_page": 22,
+      "normalized_characters": 3079,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p017",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 17,
+      "physical_pdf_page": 23,
+      "normalized_characters": 1549,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p018",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 18,
+      "physical_pdf_page": 24,
+      "normalized_characters": 2417,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p019",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 19,
+      "physical_pdf_page": 25,
+      "normalized_characters": 1083,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p020",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 20,
+      "physical_pdf_page": 26,
+      "normalized_characters": 2030,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p021",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 21,
+      "physical_pdf_page": 27,
+      "normalized_characters": 2520,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p022",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 22,
+      "physical_pdf_page": 28,
+      "normalized_characters": 2054,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p023",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 23,
+      "physical_pdf_page": 29,
+      "normalized_characters": 1673,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p024",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 24,
+      "physical_pdf_page": 30,
+      "normalized_characters": 1714,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p025",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 1,
+      "chapter_title": "Getting Started",
+      "printed_page": 25,
+      "physical_pdf_page": 31,
+      "normalized_characters": 665,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p026",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 26,
+      "physical_pdf_page": 32,
+      "normalized_characters": 1625,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p027",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 27,
+      "physical_pdf_page": 33,
+      "normalized_characters": 2615,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p028",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 28,
+      "physical_pdf_page": 34,
+      "normalized_characters": 1823,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p029",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 29,
+      "physical_pdf_page": 35,
+      "normalized_characters": 1994,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p030",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 30,
+      "physical_pdf_page": 36,
+      "normalized_characters": 1958,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p031",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 31,
+      "physical_pdf_page": 37,
+      "normalized_characters": 1752,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p032",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 32,
+      "physical_pdf_page": 38,
+      "normalized_characters": 2564,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p033",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 33,
+      "physical_pdf_page": 39,
+      "normalized_characters": 1942,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p034",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 34,
+      "physical_pdf_page": 40,
+      "normalized_characters": 1781,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p035",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 35,
+      "physical_pdf_page": 41,
+      "normalized_characters": 1616,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p036",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 36,
+      "physical_pdf_page": 42,
+      "normalized_characters": 1978,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p037",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 37,
+      "physical_pdf_page": 43,
+      "normalized_characters": 2141,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p038",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 38,
+      "physical_pdf_page": 44,
+      "normalized_characters": 2012,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p039",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 39,
+      "physical_pdf_page": 45,
+      "normalized_characters": 1486,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p040",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 40,
+      "physical_pdf_page": 46,
+      "normalized_characters": 1800,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p041",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 41,
+      "physical_pdf_page": 47,
+      "normalized_characters": 1554,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p042",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 42,
+      "physical_pdf_page": 48,
+      "normalized_characters": 1870,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p043",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 43,
+      "physical_pdf_page": 49,
+      "normalized_characters": 1603,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p044",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 44,
+      "physical_pdf_page": 50,
+      "normalized_characters": 2334,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p045",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 45,
+      "physical_pdf_page": 51,
+      "normalized_characters": 2096,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p046",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 46,
+      "physical_pdf_page": 52,
+      "normalized_characters": 2281,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p047",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 47,
+      "physical_pdf_page": 53,
+      "normalized_characters": 1982,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p048",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 48,
+      "physical_pdf_page": 54,
+      "normalized_characters": 1891,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p049",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 49,
+      "physical_pdf_page": 55,
+      "normalized_characters": 2123,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p050",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 50,
+      "physical_pdf_page": 56,
+      "normalized_characters": 2291,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p051",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 51,
+      "physical_pdf_page": 57,
+      "normalized_characters": 1991,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p052",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 52,
+      "physical_pdf_page": 58,
+      "normalized_characters": 1957,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p053",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 53,
+      "physical_pdf_page": 59,
+      "normalized_characters": 2557,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p054",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 54,
+      "physical_pdf_page": 60,
+      "normalized_characters": 1998,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p055",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 55,
+      "physical_pdf_page": 61,
+      "normalized_characters": 1483,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p056",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 56,
+      "physical_pdf_page": 62,
+      "normalized_characters": 1550,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p057",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 57,
+      "physical_pdf_page": 63,
+      "normalized_characters": 1356,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p058",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 58,
+      "physical_pdf_page": 64,
+      "normalized_characters": 1380,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p059",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 59,
+      "physical_pdf_page": 65,
+      "normalized_characters": 1602,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p060",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 60,
+      "physical_pdf_page": 66,
+      "normalized_characters": 1753,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p061",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 61,
+      "physical_pdf_page": 67,
+      "normalized_characters": 1777,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p062",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 2,
+      "chapter_title": "Git Basics",
+      "printed_page": 62,
+      "physical_pdf_page": 68,
+      "normalized_characters": 507,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p063",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 63,
+      "physical_pdf_page": 69,
+      "normalized_characters": 2699,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p064",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 64,
+      "physical_pdf_page": 70,
+      "normalized_characters": 724,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p065",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 65,
+      "physical_pdf_page": 71,
+      "normalized_characters": 812,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p066",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 66,
+      "physical_pdf_page": 72,
+      "normalized_characters": 697,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p067",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 67,
+      "physical_pdf_page": 73,
+      "normalized_characters": 516,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p068",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 68,
+      "physical_pdf_page": 74,
+      "normalized_characters": 1853,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p069",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 69,
+      "physical_pdf_page": 75,
+      "normalized_characters": 1410,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p070",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 70,
+      "physical_pdf_page": 76,
+      "normalized_characters": 1342,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p071",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 71,
+      "physical_pdf_page": 77,
+      "normalized_characters": 608,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p072",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 72,
+      "physical_pdf_page": 78,
+      "normalized_characters": 1729,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p073",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 73,
+      "physical_pdf_page": 79,
+      "normalized_characters": 958,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p074",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 74,
+      "physical_pdf_page": 80,
+      "normalized_characters": 701,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p075",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 75,
+      "physical_pdf_page": 81,
+      "normalized_characters": 1273,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p076",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 76,
+      "physical_pdf_page": 82,
+      "normalized_characters": 868,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p077",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 77,
+      "physical_pdf_page": 83,
+      "normalized_characters": 1823,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p078",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 78,
+      "physical_pdf_page": 84,
+      "normalized_characters": 1786,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p079",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 79,
+      "physical_pdf_page": 85,
+      "normalized_characters": 1740,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p080",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 80,
+      "physical_pdf_page": 86,
+      "normalized_characters": 1616,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p081",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 81,
+      "physical_pdf_page": 87,
+      "normalized_characters": 1688,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p082",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 82,
+      "physical_pdf_page": 88,
+      "normalized_characters": 1837,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p083",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 83,
+      "physical_pdf_page": 89,
+      "normalized_characters": 1874,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p084",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 84,
+      "physical_pdf_page": 90,
+      "normalized_characters": 1443,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p085",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 85,
+      "physical_pdf_page": 91,
+      "normalized_characters": 860,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p086",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 86,
+      "physical_pdf_page": 92,
+      "normalized_characters": 1731,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p087",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 87,
+      "physical_pdf_page": 93,
+      "normalized_characters": 351,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p088",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 88,
+      "physical_pdf_page": 94,
+      "normalized_characters": 403,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p089",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 89,
+      "physical_pdf_page": 95,
+      "normalized_characters": 549,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p090",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 90,
+      "physical_pdf_page": 96,
+      "normalized_characters": 371,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p091",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 91,
+      "physical_pdf_page": 97,
+      "normalized_characters": 1220,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p092",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 92,
+      "physical_pdf_page": 98,
+      "normalized_characters": 2411,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p093",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 93,
+      "physical_pdf_page": 99,
+      "normalized_characters": 2217,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p094",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 94,
+      "physical_pdf_page": 100,
+      "normalized_characters": 2643,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p095",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 95,
+      "physical_pdf_page": 101,
+      "normalized_characters": 936,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p096",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 96,
+      "physical_pdf_page": 102,
+      "normalized_characters": 1129,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p097",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 97,
+      "physical_pdf_page": 103,
+      "normalized_characters": 1735,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p098",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 98,
+      "physical_pdf_page": 104,
+      "normalized_characters": 886,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p099",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 99,
+      "physical_pdf_page": 105,
+      "normalized_characters": 995,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p100",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 100,
+      "physical_pdf_page": 106,
+      "normalized_characters": 1234,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p101",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 101,
+      "physical_pdf_page": 107,
+      "normalized_characters": 373,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p102",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 102,
+      "physical_pdf_page": 108,
+      "normalized_characters": 1798,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p103",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 103,
+      "physical_pdf_page": 109,
+      "normalized_characters": 1881,
+      "counted_as_useful_content": true
+    },
+    {
+      "page_id": "progit-v21450-p104",
+      "source_id": "progit-v2-1-450",
+      "chapter_number": 3,
+      "chapter_title": "Git Branching",
+      "printed_page": 104,
+      "physical_pdf_page": 110,
+      "normalized_characters": 1838,
+      "counted_as_useful_content": true
+    }
+  ],
+  "extraction": {
+    "tool": "PyMuPDF",
+    "text_extraction": "completed_for_page_character_counts",
+    "ocr_required": "not_assessed_page_by_page; PDF text extraction returned text for selected pages",
+    "notes": "Character counts are based on NFKC-normalized extracted text with whitespace collapsed and the trailing printed page number removed. Figures may contribute little or no extracted text."
+  },
+  "chunking_experiments": {
+    "fixed_size": {
+      "target_tokens": 500,
+      "overlap_tokens": 100
+    },
+    "semantic": {
+      "split_by": [
+        "chapter",
+        "section",
+        "subsection",
+        "paragraph"
+      ]
+    }
+  },
+  "metadata_filters": [
+    "chapter_number",
+    "chapter_title",
+    "section",
+    "topic",
+    "content_type",
+    "printed_page",
+    "physical_pdf_page"
+  ]
+}

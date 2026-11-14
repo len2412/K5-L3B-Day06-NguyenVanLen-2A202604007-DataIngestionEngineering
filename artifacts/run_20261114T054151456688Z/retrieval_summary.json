@@ -1,0 +1,86 @@
+{
+  "A": {
+    "dev": {
+      "questions": 15,
+      "hit_at_1": {
+        "hits": 8,
+        "total": 15,
+        "rate": 0.5333333333333333
+      },
+      "evidence_hit_at_3": {
+        "hits": 8,
+        "total": 15,
+        "rate": 0.5333333333333333
+      }
+    },
+    "test": {
+      "questions": 5,
+      "hit_at_1": {
+        "hits": 3,
+        "total": 5,
+        "rate": 0.6
+      },
+      "evidence_hit_at_3": {
+        "hits": 5,
+        "total": 5,
+        "rate": 1.0
+      }
+    }
+  },
+  "B": {
+    "dev": {
+      "questions": 15,
+      "hit_at_1": {
+        "hits": 9,
+        "total": 15,
+        "rate": 0.6
+      },
+      "evidence_hit_at_3": {
+        "hits": 11,
+        "total": 15,
+        "rate": 0.7333333333333333
+      }
+    },
+    "test": {
+      "questions": 5,
+      "hit_at_1": {
+        "hits": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "evidence_hit_at_3": {
+        "hits": 4,
+        "total": 5,
+        "rate": 0.8
+      }
+    }
+  },
+  "C": {
+    "dev": {
+      "questions": 15,
+      "hit_at_1": {
+        "hits": 9,
+        "total": 15,
+        "rate": 0.6
+      },
+      "evidence_hit_at_3": {
+        "hits": 11,
+        "total": 15,
+        "rate": 0.7333333333333333
+      }
+    },
+    "test": {
+      "questions": 5,
+      "hit_at_1": {
+        "hits": 0,
+        "total": 5,
+        "rate": 0.0
+      },
+      "evidence_hit_at_3": {
+        "hits": 5,
+        "total": 5,
+        "rate": 1.0
+      }
+    }
+  }
+}
