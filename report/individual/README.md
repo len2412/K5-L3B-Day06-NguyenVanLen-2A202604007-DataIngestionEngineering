@@ -1,3 +1,3 @@
 # Báo cáo cá nhân
 
-Copy `MSSV_HoTen.md` thành `<MSSV>_<HoTen>.md`, điền kết quả thực tế và liên kết đến trace, nhãn audit cùng cấu hình. Không ghi giá trị ví dụ thành kết quả đã chạy.
+Báo cáo bài làm hiện tại: [2A202604007_NguyenVanLen.md](2A202604007_NguyenVanLen.md). Báo cáo đã điền kết quả, liên kết đến trace và nhãn rà soát; các nhãn có AI hỗ trợ cần học viên tự xác nhận trước khi nộp.

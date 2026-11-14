@@ -8,15 +8,15 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 |---|---|---|
 | Tối thiểu **30 trang nội dung** | Tối thiểu **3 cấu hình** | Tối thiểu **20 câu hỏi** |
 
-## Completed project: Nguyen Van Len
+## Bài làm: Nguyễn Văn Lên
 
-Corpus and benchmark are in `data/`; the project code is in `starter/src/`. The current measured run is `artifacts/run_20261114T054151456688Z/`. See the individual report under `report/individual/` for results and limitations.
+Corpus và benchmark nằm trong `data/`; mã dự án nằm trong `starter/src/`. Kết quả chạy mới nhất ở `artifacts/run_20261114T054151456688Z/`. Xem báo cáo cá nhân trong `report/individual/` để biết kết quả và giới hạn.
 
-### Reproduce the run
+### Chạy lại pipeline
 
-Requires Docker Compose, Python 3.11–3.14, the dependencies below, and the `BAAI/bge-large-en-v1.5` model already in the local Hugging Face cache (the embedding loader runs offline).
+Cần Docker Compose, Python 3.11–3.14, các thư viện bên dưới và model `BAAI/bge-large-en-v1.5` đã có trong Hugging Face cache cục bộ (bộ tạo embedding chạy offline).
 
-From the project root in PowerShell:
+Chạy từ thư mục gốc dự án bằng PowerShell:
 
 ```powershell
 Set-Location starter
@@ -29,11 +29,11 @@ python scripts/check_setup.py
 python -m src.run
 ```
 
-Each run writes a new timestamped directory under `artifacts/`. PostgreSQL is bound to localhost port 55433; the compose password is a local lab credential only. Keep `.env` out of version control. Exact package constraints are in `starter/requirements.txt`; the database image is pinned in `starter/docker-compose.yml`.
+Mỗi lần chạy tạo thư mục mới có dấu thời gian trong `artifacts/`. PostgreSQL chỉ mở tại localhost cổng 55433; mật khẩu trong compose chỉ dùng cho lab cục bộ. Không đưa `.env` vào version control. Ràng buộc phiên bản thư viện nằm trong `starter/requirements.txt`; image database được cố định trong `starter/docker-compose.yml`.
 
-### Submission status
+### Tình trạng bài nộp
 
-Student class is L3B. The student ID and name are taken from the project folder; confirm the name spelling/diacritics. Submission is local only for now, as requested. If publishing later, add the repository URL and final commit to `STUDENT.md`.
+Lớp L3B. Họ tên và repo theo thông tin trong `STUDENT.md`: [Nguyễn Văn Lên](https://github.com/len2412/K5-L3B-Day06-NguyenVanLen-2A202604007-DataIngestionEngineering). Commit chốt bài cần được ghi bổ sung vào `STUDENT.md`.
 
 ## Bắt đầu nhanh
 
@@ -56,7 +56,7 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 ## 3. Chuẩn bị bài nộp
 
 1. Chạy pipeline và lưu cấu hình, kết quả top-3, trace cùng nhãn đánh giá thủ công.
-2. Xem [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và [báo cáo cá nhân](report/individual/2A202604007_NguyenVanLen.md); xác nhận các nhãn AI-assisted trước khi nộp.
+2. Xem [thông tin học viên](STUDENT.md), [nhật ký thí nghiệm](artifacts/experiment_log.csv) và [báo cáo cá nhân](report/individual/2A202604007_NguyenVanLen.md); xác nhận các nhãn được AI hỗ trợ trước khi nộp.
 3. Kiểm tra mã nguồn, cách chạy, manifest dữ liệu và checklist trong [SUBMISSION.md](SUBMISSION.md).
 
 ## Tài liệu hướng dẫn

@@ -26,7 +26,7 @@ Mẫu báo cáo: [report/individual/2A202604007_NguyenVanLen.md](report/individu
 - [x] Có embedding model thật và vector store hỗ trợ lưu bền vững, vector search, metadata filter; ghi phiên bản và cấu hình.
 - [x] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark.
 - [x] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian.
-- [ ] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; có nhãn AI-assisted ban đầu. Học viên cần tự kiểm tra/xác nhận các nhãn trước khi nộp.
+- [ ] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; hiện có nhãn ban đầu được AI hỗ trợ. Học viên cần tự kiểm tra/xác nhận các nhãn trước khi nộp.
 - [x] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân.
 - [x] Không thấy `.env`, credential hoặc dữ liệu riêng tư trong các file bài nộp đã kiểm tra; xác nhận trước khi publish.
-- [ ] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp. Student currently plans a local-only submission; confirm the instructor accepts this delivery method or publish a repository later.
+- [ ] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp. URL repo đã ghi trong `STUDENT.md`;
